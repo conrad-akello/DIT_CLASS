@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Year of Birth</title>
+</head>
+<body>
+    <form action="process_form.php" method="post">
+        <label for="year_of_birth">Year of Birth:</label>
+        <select id="year_of_birth" name="year_of_birth" required>
+            <option value="">Select year</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        const select = document.getElementById('year_of_birth');
+        const currentYear = new Date().getFullYear();
+        const startYear = 1900;
+
+        for (let year = currentYear; year >= startYear; year--) {
+            const option = document.createElement('option');
+            option.value = year;
+            option.text = year;
+            select.appendChild(option);
+        }
+    </script>
+</body>
+</html>

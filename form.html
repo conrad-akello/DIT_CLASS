@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>forms</title>
+</head>
+<body>
+	<form>
+		Username:<input type="text" name="Username">
+		P/W:<input type="password" name="password">
+		<button>Submit</button>
+	</form>
+<hr>
+	<form>
+		SELECT YOUR GENDER:<br>
+		Male:<input type="radio" name="sex">
+		Female:<input type="radio" name="sex">
+	</form>
+	<hr>
+	<form>
+		Please select the the fruits you like:<br>
+		Mango:<input type="checkbox" name="food">
+		Guava:<input type="checkbox" name="food">
+		Apple:<input type="checkbox" name="food">
+		Pineapple:<input type="checkbox" name="food">
+	</form>
+	<hr>
+	<form>
+		Please choose your country:
+		<select name="countries">
+			<option>KENYA</option>
+			<option>UGANDA</option>
+			<option>TANZANIA</option>
+			<option>DJIBOUTI</option>
+			<option>ERITREA</option>
+			<option>ZAMBIA</option>
+			<option>ZIMBABWE</option>
+			<option>RWANDA</option>
+			<option>SUDAN</option>
+			<option>MALI</option>
+		</select>
+	</form>
+	<hr>
+
+	<form>
+		What is your opinion?<br>
+		<textarea name="opinion" rows="8" cols="40">
+			
+		</textarea>
+
+		<form>
+			<br>
+			Upload file
+			<input type="file" name="Upload">
+		</form>
+	</form>
+	<hr>
+	<form action="Book1.xlsx" method="get">
+		Username:<input type="text" name="Username" size="10" maxlength="5" required>
+		<br><br>
+		P/W:<input type="password" name="pass" size="10" maxlength="5" required>
+		<br><br>
+		<label for="Age">choose Age</label>
+		<input type="month" name="age">
+		<input type="week" name="age">
+		<input type="year" name="age">
+		<button>Submit</button>
+	</form>
+
+</body>
+</html>
